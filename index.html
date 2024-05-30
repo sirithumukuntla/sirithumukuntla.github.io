@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>siri's website</title>
+</head>
+<body>
+    <h1>bitch</h1>
+    <h2>bitch</h2>
+    <h3>bitch</h3>
+    <h4>bitch</h4>
+    <p>bitchessssss and niggass</p>
+    <!--i've done it by searching toggle word wrap in command palatte comand palatte is from setting button bruv -->
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat vitae eaque explicabo odit commodi est dolorum quia officiis recusandae natus! Ipsam doloribus animi vero facere amet. Veritatis totam iure perferendis.</p>
+    <!--down hr is for a line-->
+    <hr>
+    <!--attribute it is down side
+    down is ex of absolute link-->
+    <a href="https://deadpoolstark.github.io/" target="_main">click here bitchess to go to dat niggass website</a>
+
+    <br>
+    <!--example of relative link-->
+    <a href="/simri.html">go to simri.html</a>
+    <!--image link alt is appeared when image is not loaded-->
+    <br>
+  <img src="https://vignette.wikia.nocookie.net/doblaje/images/d/d3/MeowthRocketTeam02.png/revision/latest?cb=20190614170026&path-prefix=es" alt="meowth" width="121px">
+  <br>
+  <a href="#fock">jump to last</a>
+  <br>
+<b>meowth says bold meow</b>
+<br>
+<i>meowth says italic meow</i>
+<br>
+<big>this is big meowth</big>
+<br>
+<small>this says small meowth</small>
+<br>
+meow
+<!--subscript and superscript-->
+<p>meowth<sub>under</sub></p>
+<p>a<sup>2</sup> +b<sup>2</sup> (a+b)<sup>2</sup> attack attack elaka pilli mida care</p>
+<!--for the below code if we just do cntrl c cntrl v and also we did not keep a <pre></pre> we wouldn't be able to have innotations and proper spaces so we use <pre></pre> -->
+<pre>
+import random
+
+    def get_user_choice():
+        user_choice = input("Enter 'rock', 'paper' or 'scissors': ").lower()
+        while user_choice not in ['rock', 'paper', 'scissors']:
+            print("Invalid choice. Please enter 'rock', 'paper' or 'scissors'.")
+            user_choice = input("Enter 'rock', 'paper' or 'scissors': ").lower()
+        return user_choice
+    
+    def get_computer_choice():
+        return random.choice(['rock', 'paper', 'scissors'])
+    
+    def determine_winner(user_choice, computer_choice):
+        if user_choice == computer_choice:
+            return "It's a tie!"
+        elif (user_choice == 'rock' and computer_choice == 'scissors') or \
+             (user_choice == 'paper' and computer_choice == 'rock') or \
+             (user_choice == 'scissors' and computer_choice == 'paper'):
+            return "You win!"
+        else:
+            return "Computer wins!"
+    
+    def getplay_again():
+        playagain=input("Do you want to play again?(yes/no)").lower()
+        while playagain not in ['yes','no']:
+            playagain=input("enter a valid response either yes or no:").lower()
+        return playagain=='yes'
+            
+    def play_game():
+        print("Let's play Rock, Paper, Scissors!")
+        while True:
+            user_choice = get_user_choice()
+            computer_choice = get_computer_choice()
+            print(f"You chose {user_choice}. Computer chose {computer_choice}.")
+            print(determine_winner(user_choice, computer_choice))
+            if not getplay_again():
+                skull = "\U0001F480"
+                print("f off", skull)
+                break
+
+    play_game()
+    <!-- for the lines that should be commented out we just click ctrl + / so simpull bitchessssss -->
+    <ul>type="square"
+     <li>home</li>
+     <li>about</li>
+    </ul>
+    <h7 id="fock"></h7>
+</body>
+</html> 
